@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="shortcut icon" href="favicon.ico">
+		<title>Автоскоп</title>
+		<link rel="stylesheet" href="css/libs.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+	<body>
+
+		<!-- Header -->
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<a class="header__logo logo" href="index.html">
+						<img src="images/icon/logo_image.svg" alt="Logo">
+						<span>автоскоп</span>
+					</a>
+					<nav class="header__menu">
+						<ul class="header__menu-list">
+							<li class="header__menu-item"><a class="header__menu-link" href="#">О сервисе</a></li>
+							<li class="header__menu-item"><a class="header__menu-link" href="#">Тарифы</a></li>
+							<li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+							<li class="header__menu-item header__menu-item-faq">
+								<a class="header__menu-link" href="#">FAQ</a>
+								<span title="Ответы на основыные вопросы">?</span>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__btns">
+						<button class="header__btns-btn">
+							<a class="popup-link" href="#vin-car">Где я могу <span>найти VIN?</span></a>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="popup" id="vin-car">
+			<div class="popup__body">
+				<div class="popup__content popup-vin__content">
+					<div class="popup-vin__top">
+						<span class="popup-vin__title">Где Вы можете найти VIN-номер</span>
+						<a class="popup__close" href="#">&#10006</a>
+					</div>
+					<div class="popup-vin__inner">
+						<div class="popup-vin__image"><img src="images/car-popup.png" alt="Состояние машины"></div>
+						<div class="popup-vin__text">
+							<ul class="popup-vin__top-list popup-vin__list">
+								<li class="popup-vin__top-item popup-vin__item">На стойке у передней двери</li>
+								<li class="popup-vin__top-item popup-vin__item">На панели под лобовым стеклом</li>
+								<li class="popup-vin__top-item popup-vin__item">Под капотом</li>
+							</ul>
+							<ul class="popup-vin__bottom-list popup-vin__list">
+								<span class="popup-vin__bottom-title">Так же, его можно найти в <br/> документах на ТС</span>
+								<li class="popup-vin__bottom-item popup-vin__item">В паспорте ТС</li>
+								<li class="popup-vin__bottom-item popup-vin__item">В свидетельстве о регистрации</li>
+								<li class="popup-vin__bottom-item popup-vin__item">В полисе ОСАГО</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header -->
+
+		<script src="js/libs.min.js" defer></script>
+		<script src="js/main.js" defer></script>
+	</body>
+</html>
