@@ -158,7 +158,8 @@ span{
 
 // HEADER ==============================================================
 .header {
-	padding: 20px 0;
+	@include adaptive-value("padding-top", 20, 10, 1);
+	@include adaptive-value("padding-bottom", 20, 10, 1);
 	background-color: #F8FAFD;
 	&__body {
 		display: flex;
@@ -174,19 +175,7 @@ span{
 		display: flex;
 		justify-content: space-between;
 	}
-	&__menu-item {
-		position: relative;
-		padding-right: 15px;
-		&::after{
-			position: absolute;
-			top: 50%;
-			transform: translate(0, -50%);
-			right: 0;
-			content: '>';
-			color: #2285E0;
-			font-size: rem(18);
-		}
-	}
+	&__menu-item {}
 	&__menu-item-faq{
 		display: flex;
 		align-items: center;
@@ -205,7 +194,18 @@ span{
 	}
 	&__menu-link {
 		position: relative;
+		padding-right: 15px;
+		&::after{
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			right: 0;
+			content: '>';
+			color: #2285E0;
+			font-size: rem(18);
+		}
 	}
+	&__menu-bots{display: none;}
 	&__btns {}
 	&__btns-btn {}
 }
@@ -235,7 +235,10 @@ body._pc .btn__bottom-line{
 .popup-vin {
 	&__content{
 		background-color: #f8fbfe;
-		padding: 30px 35px;
+		@include adaptive-value("padding-top", 30, 15, 1);
+		@include adaptive-value("padding-bottom", 30, 15, 1);
+		@include adaptive-value("padding-right", 35, 20, 1);
+		@include adaptive-value("padding-left", 35, 20, 1);
 		box-shadow: 0px 16px 16px rgba(31, 32, 38, 0.1);
 		border-radius: 5px;
 	}
@@ -243,7 +246,7 @@ body._pc .btn__bottom-line{
 		position: relative;
 		margin-bottom: 30px;
 		& .popup__close{
-			top: 3px;
+			top: 2px;
 			color: #2285E0;
 			font-size: rem(18);
 		}
@@ -280,10 +283,10 @@ body._pc .btn__bottom-line{
 		position: relative;
 		&::before{
 			position: absolute;
-			top: 2px;
+			top: 5px;
 			left: 0;
 			content: '';
-			background: url('../images/icon/checkmark_green.svg')no-repeat;
+			background: url('../images/icon/check-green_small.svg')no-repeat;
 			width: 20px;
 			height: 20px;
 		}
@@ -307,6 +310,10 @@ body._pc .btn__bottom-line{
 			height: 20px;
 		}
 	}
+}
+// MENU BURGER =========================================================
+.menu__burger{
+	display: none;
 }
 // CONTENT =============================================================
 .header-content {
@@ -349,7 +356,6 @@ body._pc .btn__bottom-line{
 	&__form-lab{}
 	&__inp {}
 	&__but {}
-	&__but-link {}
 	&__links {
 		display: flex;
 		justify-content: space-between;
@@ -391,6 +397,7 @@ body._pc .form-but-link:active{
 	background-color: #1F71BD;
 }
 // Form input ================
+.header__menu-lab{display: none;}
 .form-lab{
 	position: relative;
 }
@@ -398,6 +405,7 @@ body._pc .form-but-link:active{
 	padding: 25px 190px 25px 20px;
 	border: none;
 	font-size: rem(18);
+	line-height: em(22);
 	width: 100%;
 	border-radius: 5px;
 	margin-bottom: 30px;
@@ -416,7 +424,7 @@ body._pc .form-but-link:active{
 	transform: translateY(-50%);
 	right: 10px;
 	border: none;
-
+	border-radius: 5px;
 }
 .form-but-link{
 	padding: 16px 24px;
@@ -424,6 +432,8 @@ body._pc .form-but-link:active{
 	background-color: #2285e0;
 	border-radius: 5px;
 	transition: .5s;
+	span{color: #fff;}
+	svg{display: none;}
 }
 // ===========================
 // ==============================================================
@@ -730,22 +740,17 @@ body._pc .bot__text-link:active{
 		margin: 0 auto;
 		@include adaptive-value("margin-bottom", 50, 20, 1);
 	}
-	&__inner {
-		// display: grid;
-		// grid-gap: 18px;
-	}
+	&__inner {}
 	&__inner-wrap{
-		&:nth-child(1){
-			display: grid;
-			grid-template-columns: 45% 55%;
-			grid-gap: 18px;
-			margin-bottom: 18px;
-		}
-		&:nth-child(2){
-			display: grid;
-			grid-template-columns: 55% 45%;
-			grid-gap: 18px;
-		}
+		display: grid;
+		grid-gap: 18px;
+	}
+	&__inner-wrap--top{
+		grid-template-columns: 45% 55%;
+		margin-bottom: 18px;
+	}
+	&__inner-wrap--bottom{
+		grid-template-columns: 55% 45%;
 	}
 	&__item {
 		text-align: left;
@@ -855,12 +860,14 @@ body._pc .rep-content__bottom-but:hover{
 	background: linear-gradient(180deg, #FBFCFF 0%, #F0F2F5 100%);
 	&__inner {
 		display: flex;
-		gap: 25px;
 		justify-content: space-between;
+		align-items: center;
+		gap: 35px;
 	}
 	&__bots {
 		position: relative;
 		@include adaptive-value("width", 370, 270, 1);
+		transform: translateY(5px);
 	}
 	&__bots-image{}
 	&__bots-body {
@@ -869,7 +876,6 @@ body._pc .rep-content__bottom-but:hover{
 		left: 17%;
 		display: flex;
 		flex-direction: column;
-		gap: 10px;
 	}
 	&__bots-link {
 		width: 160%;
@@ -883,17 +889,23 @@ body._pc .rep-content__bottom-but:hover{
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		gap: 5px;
 		transition: .3s;
+		& + & {
+			margin-top: 10px;
+		}
+		img{
+			padding-right: 5px;
+		}
 	}
 	&__text {
 		flex: 0 1 670px;
-		padding-top: 200px;
 	}
-	&__loop {
-		position: absolute;
-		top: 0;
-		right: 0;
+	&__text-image{
+		max-width: 550px;
+		margin: 0 auto;
+		img{
+			max-width: 100%;
+		}
 	}
 	&__top{
 		display: flex;
@@ -922,7 +934,7 @@ body._pc .check__bots-link:hover{
 body._pc .check__bots-link:active{
 	background-color: #1F71BD;
 }
-// ===============================================================
+// Footer ========================================================
 .footer {
 	@include adaptive-value("padding-top", 80, 30, 1);
 	@include adaptive-value("padding-bottom", 20, 10, 1);
@@ -942,6 +954,7 @@ body._pc .check__bots-link:active{
 	&__wrap {
 		display: flex;
 		justify-content: space-between;
+		gap: 20px;
 	}
 	&__item {
 		display: flex;
@@ -963,10 +976,13 @@ body._pc .check__bots-link:active{
 		flex-wrap: wrap;
 		@include adaptive-value("padding-bottom", 40, 20, 1);
 		border-bottom: 1px solid #9FB7D3;
-		font-size: 18px;
+		font-size: rem(18);
 		font-weight: 700;
 	}
-	&__menu-item {}
+	&__menu-item {
+		padding-right: 10px;
+		margin-bottom: 10px;
+	}
 	&__menu-link {}
 	&__politics {
 		display: flex;
