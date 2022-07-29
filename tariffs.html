@@ -5,9 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="shortcut icon" href="favicon.ico">
-		<title>Автоскоп</title>
+		<title>Тарифы</title>
 		<link rel="stylesheet" href="css/libs.min.css">
-		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/style-pages.min.css">
 	</head>
 	<body>
 
@@ -22,6 +22,18 @@
 					<div class="menu__burger">
 						<span></span>
 					</div>
+					<form class="header__form" action="#">
+						<label class="header__form-lab form-lab">
+							<input class="header__form-inp form-inp" type="text" placeholder="Введите VIN или госномер">
+							<button class="header__form-but form-but">
+								<a class="header__form-but-link form-but-link" href="report.html">
+									<svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.10747 2.27077L8.10551 2.2687C8.01541 2.17402 7.94271 2.06028 7.8927 1.93337C7.84267 1.80644 7.81664 1.6696 7.81664 1.53087C7.81664 1.39214 7.84267 1.2553 7.8927 1.12837C7.94271 1.00147 8.01541 0.887729 8.10551 0.793045C8.19555 0.698411 8.3011 0.624744 8.41542 0.574975C8.52968 0.525236 8.6512 0.5 8.77328 0.5C8.89536 0.5 9.01689 0.525236 9.13115 0.574975C9.24547 0.624743 9.35101 0.69841 9.44106 0.793045L13.2104 4.7545C13.5936 5.15719 13.6002 5.82303 13.2081 6.24798L9.44106 10.207C9.25952 10.3977 9.01876 10.5 8.77328 10.5C8.52781 10.5 8.28704 10.3977 8.10551 10.207C7.92316 10.0153 7.81664 9.75033 7.81664 9.46913C7.81664 9.18793 7.92316 8.92294 8.10551 8.7313L8.10747 8.72923L9.37854 7.37804L10.1712 6.53545H9.01435H1.461C0.956718 6.53545 0.5 6.09206 0.5 5.5C0.5 4.90794 0.956718 4.46455 1.461 4.46455H9.01435H10.1712L9.37854 3.62196L8.10747 2.27077L8.10747 2.27077Z" fill="white" stroke="#2285E0"/>
+									</svg>
+								</a>
+							</button>
+						</label>
+					</form>
 					<nav class="header__menu">
 						<form class="header__menu-form" action="#">
 							<label class="form-lab header__menu-lab">
@@ -93,225 +105,81 @@
 				</div>
 			</div>
 		</div>
-		<!-- Header -->
-		<div class="header-content">
+		<div class="breadcrumbs">
 			<div class="container">
-				<div class="header-content__inner">
-					<div class="header-content__image">
-						<img src="images/car-lines.svg" alt="Автомобиль">
-					</div>
-					<div class="header-content__action">
-						<h1 class="header-content__title"><span>Проверьте авто</span> по VIN и госномеру</h1>
-						<p class="header-content__descr">ДТП, ремонт, залоги, ограничения, отсутствие тех. обслуживания, использование автомобиля в такси и другие данные <a href="#"><span>из официальных источников</span></a></p>
-						<form class="header-content__form" action="#">
-							<label class="header-content__form-lab form-lab">
-								<input class="header-content__inp form-inp" type="text" placeholder="Введите VIN или госномер">
-								<button class="header-content__but form-but">
-									<a class="header-content__but-link form-but-link" href="report.html">
-										<span>Проверить авто</span>
-										<svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.10747 2.27077L8.10551 2.2687C8.01541 2.17402 7.94271 2.06028 7.8927 1.93337C7.84267 1.80644 7.81664 1.6696 7.81664 1.53087C7.81664 1.39214 7.84267 1.2553 7.8927 1.12837C7.94271 1.00147 8.01541 0.887729 8.10551 0.793045C8.19555 0.698411 8.3011 0.624744 8.41542 0.574975C8.52968 0.525236 8.6512 0.5 8.77328 0.5C8.89536 0.5 9.01689 0.525236 9.13115 0.574975C9.24547 0.624743 9.35101 0.69841 9.44106 0.793045L13.2104 4.7545C13.5936 5.15719 13.6002 5.82303 13.2081 6.24798L9.44106 10.207C9.25952 10.3977 9.01876 10.5 8.77328 10.5C8.52781 10.5 8.28704 10.3977 8.10551 10.207C7.92316 10.0153 7.81664 9.75033 7.81664 9.46913C7.81664 9.18793 7.92316 8.92294 8.10551 8.7313L8.10747 8.72923L9.37854 7.37804L10.1712 6.53545H9.01435H1.461C0.956718 6.53545 0.5 6.09206 0.5 5.5C0.5 4.90794 0.956718 4.46455 1.461 4.46455H9.01435H10.1712L9.37854 3.62196L8.10747 2.27077L8.10747 2.27077Z" fill="white" stroke="#2285E0"/>
-										</svg>
-									</a>
-								</button>
-							</label>
-							<div class="header-content__links">
-								<a class="header-content__link-example btn__bottom-line" href="report.html">Посмотреть <span>пример отчёта</span></a>
-								<div class="header-content__social-links">
-									<a class="header-content__social-link header-content__social-link__vk" href="#">
-										<img src="images/icon/vk-icon.png" alt="VK icon">
-										<span>ВК-бот</span>
-									</a>
-									<a class="header-content__social-link header-content__social-link__telegramm" href="#">
-										<img src="images/icon/telegramm-icon.png" alt="Telegramm icon">
-										<span>Телеграм-Бот</span>
-									</a>
-								</div>
-							</div>
-						</form>
-					</div>
+				<div class="breadcrumbs__inner">
+					<ul class="breadcrumbs__list mobile-overflow">
+						<li class="breadcrumbs__list-item">
+							<a class="breadcrumbs__list-link" href="index.html">
+								Главная
+							</a>
+						</li>
+						<li class="breadcrumbs__list-item">
+							<span class="breadcrumbs__list-link">
+								Тарифы
+							</span>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 
 		<main class="main">
-			<!-- Persent statistic -->
-			<section class="statistic page__section">
+			<!-- Tariffing -->
+			<section class="tariffing">
 				<div class="container">
-					<div class="statistic__body">
-						<div class="statistic__item">
-							<div class="statistic__item-grafic">
-								<svg class="statistic__item-progress-bar">
-									<circle cx="62" cy="62"	r="50" />
-									<circle cx="62" cy="62"	r="50" />
-								</svg>
-								<span class="statistic__item-grafic__number" data-digits-counter>75</span>
-							</div>
-							<div class="statistic__item-descr">
-								<p class="statistic__item-text">Продаваемых подержанных авто <span>учавствовали в ДТП</span></p>
-							</div>
+					<div class="tariffing__top">
+						<div class="tariffing__image"><img src="images/icon/tariffing.svg" alt="Изображение Рубля"></div>
+						<h2 class="tariffing__title">Тарификация услуг</h2>
+						<p class="tariffing__descr">Комплексные тарифы для проверки группы автомобилей, и безлимитные решения для масштабных проверок целых автопарков</p>
+					</div>
+					<div class="tariffing__single">
+						<div class="tariffing__single-title">
+							<img src="images/icon/notebook_icon.svg" alt="Иконка ноутбука">
+							<div class="tariffing__single-title--text">Тариф <span>Автоскоп-Веб</span></div>
 						</div>
-						<div class="statistic__item">
-							<div class="statistic__item-grafic">
-								<svg class="statistic__item-progress-bar">
-									<circle cx="62" cy="62" r="50" />
-									<circle cx="62" cy="62" r="50" />
-								</svg>
-								<span class="statistic__item-grafic__number" data-digits-counter>89</span>
-							</div>
-							<div class="statistic__item-descr">
-								<p class="statistic__item-text">Имеют <span>скрученный пробег</span></p>
-							</div>
-						</div>
-						<div class="statistic__item">
-							<div class="statistic__item-grafic">
-								<svg class="statistic__item-progress-bar">
-									<circle cx="62" cy="62" r="50" />
-									<circle cx="62" cy="62" r="50" />
-								</svg>
-								<span class="statistic__item-grafic__number" data-digits-counter>34</span>
-							</div>
-							<div class="statistic__item-descr">
-								<p class="statistic__item-text">Имеют <span>наложенные ограничения</span></p>
-							</div>
-						</div>
-						<div class="statistic__item">
-							<div class="statistic__item-grafic">
-								<svg class="statistic__item-progress-bar">
-									<circle cx="62" cy="62" r="50" />
-									<circle cx="62" cy="62" r="50" />
-								</svg>
-								<span class="statistic__item-grafic__number" data-digits-counter>49</span>
-							</div>
-							<div class="statistic__item-descr">
-								<p class="statistic__item-text">Использовались для <span>работы в такси</span></p>
-							</div>
+						<p class="tariffing__single-descr">Единый тариф для веб-версии нашего сервиса</p>
+						<div class="tariffing__single-item">
+							<div class="tariffing__single-item--text">1 отчёт</div>
+							<span class="tariffing__single-item--money">99₽</span>
 						</div>
 					</div>
-				</div>
-			</section>
-			<!-- Bot -->
-			<section class="bot">
-				<div class="container">
-					<div class="bot__wrapper">
-						<div class="bot__text _anim-items _anim-show _anim-no-hide">
-							<h2 class="bot__title"><span>Автоскоп-бот.</span> <br/> Больший функционал - меньшая цена.</h2>
-							<p class="bot__descr"><span>Только в наших ботах</span> доступны комплексные тарифы для проверки группы автомобилей, и безлимитные решения для масштабных проверок.</p>
-							<div class="bot__text-cards tariffs-cards">
-								<div class="bot__text-card tariffs-card">
-									<div class="bot__text-card__top tariffs-card__top">
-										<div class="bot__text-card__image tariffs-card__image"><img src="images/icon/card-report.svg" alt="Изображение отчёта"></div>
-										<h6 class="bot__text-card__title tariffs-card__title">Пакеты отчётов</h6>
-									</div>
-									<ul class="bot__text-card__list tariffs-card__list bot-orange">
-										<li class="bot__text-card__item tariffs-card__item">1 отчёт <span>99₽</span></li>
-										<li class="bot__text-card__item tariffs-card__item">5 отчётов <span>325₽</span></li>
-										<li class="bot__text-card__item tariffs-card__item">10 отчётов <span>450₽</span></li>
-									</ul>
-									<div class="bot__text-card__links tariffs-card__links">
-										<a class="bot__text-card__link tariffs-card__link" href="#">Подробнее о тарифах</a>
-									</div>
+					<div class="tariffing__inner">
+						<div class="tariffs-cards _anim-items _anim-show _anim-no-hide">
+							<div class="tariffs-card">
+								<div class="tariffs-card__top">
+									<div class="tariffs-card__image"><img src="images/icon/card-report.svg" alt="Изображение отчёта"></div>
+									<h6 class="tariffs-card__title">Пакеты отчётов</h6>
 								</div>
-								<div class="bot__text-card tariffs-card">
-									<div class="bot__text-card__top tariffs-card__top">
-										<div class="bot__text-card__image tariffs-card__image"><img src="images/icon/card-subscription.svg" alt="Изображение безлимитной подписки"></div>
-										<h6 class="bot__text-card__title tariffs-card__title">Безлимитная подписка</h6>
-									</div>
-									<ul class="bot__text-card__list tariffs-card__list bot-green">
-										<li class="bot__text-card__item tariffs-card__item">1 час <span>199₽</span></li>
-										<li class="bot__text-card__item tariffs-card__item">24 часа <span>699₽</span></li>
-										<li class="bot__text-card__item tariffs-card__item">7 дней <span>1199₽</span></li>
-										<li class="bot__text-card__item tariffs-card__item">1 месяц <span>2399₽</span></li>
-									</ul>
+								<ul class="tariffs-card__list tariffing-orange">
+									<li class="tariffs-card__item">1 отчёт <span>99₽</span></li>
+									<li class="tariffs-card__item">5 отчётов <span>325₽</span></li>
+									<li class="tariffs-card__item">10 отчётов <span>450₽</span></li>
+								</ul>
+								<div class="tariffs-card__links">
+									<span class="tariffs-card__link" href="#">*Пакетный и безлимитный тарифы доступны только в ботах</span>
 								</div>
 							</div>
-							<div class="bot__text-links tariffs-card__bottom-links">
-								<a class="bot__text-link tariffs-card__bottom-link" href="#">
-									<span>Перейти в ВК-Бот</span>
-								</a>
-								<a class="bot__text-link tariffs-card__bottom-link" href="#">
-									<span>Перейти в Телеграм-Бот</span>
-								</a>
+							<div class="tariffs-card">
+								<div class="tariffs-card__top">
+									<div class="tariffs-card__image"><img src="images/icon/card-subscription.svg" alt="Изображение безлимитной подписки"></div>
+									<h6 class="tariffs-card__title">Безлимитная подписка</h6>
+								</div>
+								<ul class="tariffs-card__list tariffing-green">
+									<li class="tariffs-card__item">1 час <span>199₽</span></li>
+									<li class="tariffs-card__item">24 часа <span>699₽</span></li>
+									<li class="tariffs-card__item">7 дней <span>1199₽</span></li>
+									<li class="tariffs-card__item">1 месяц <span>2399₽</span></li>
+								</ul>
 							</div>
 						</div>
-						<div class="bot__image _anim-items _anim-show _anim-no-hide">
-							<img src="images/bot_phones-img.png" alt="Изображение двух телефонов с открытым телеграмм ботом">
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Report content -->
-			<section class="rep-content">
-				<div class="container">
-					<h2 class="rep-content__title">Отчёт содержит</h2>
-					<p class="rep-content__descr">Помимо <span>основной информации</span> (технические характеристики,включая марку, модель, год выпуска, и реальные фотографии автомобиля) отчёт состоит из:</p>
-					<div class="rep-content__inner">
-						<div class="rep-content__inner-wrap rep-content__inner-wrap--top">
-							<div class="rep-content__item">
-							<div class="rep-content__item-top">
-								<div class="rep-content__image"><img src="images/icon/technical-car.svg" alt="Техническое состояние машины"></div>
-								<div class="rep-content__specification">
-									<img src="images/icon/checkmark_green.svg" alt="Зелёная галочка">
-									<p>Данные о ДТП <br/> не обнаружены</p>
-								</div>
-							</div>
-							<h5 class="rep-content__item-title">ДТП <br/> И РЕМОНТЫ</h5>
-							<p class="rep-content__item-descr">
-								Ремонт, ДТП, в которых учавствовал автомобиль, и полученные повреждения
-							</p>
-							</div>
-							<div class="rep-content__item">
-							<div class="rep-content__item-top">
-								<div class="rep-content__image"><img src="images/icon/history-car.svg" alt="История владения машины"></div>
-								<div class="rep-content__specification">
-									<img src="images/icon/explamation-point__orange.svg" alt="Ораньжевый знак">
-									<p>Один из владельцев <br/> юридическое лицо</p>
-								</div>
-							</div>
-							<h5 class="rep-content__item-title">ИСТОРИЯ <br/> ВЛАДЕНИЯ</h5>
-							<p class="rep-content__item-descr">
-								Количество владельцев автомобиля, тип владельца, периоды эксплуатации и регионы регистрации автомобиля
-							</p>
-							</div>
-						</div>
-						<div class="rep-content__inner-wrap rep-content__inner-wrap--bottom">
-							<div class="rep-content__item">
-							<div class="rep-content__item-top">
-								<div class="rep-content__image"><img src="images/icon/restriction-car.svg" alt="Ограничения машины"></div>
-								<div class="rep-content__specification">
-									<img src="images/icon/restrictions__red.svg" alt="Красный знак">
-									<p>Есть ограничения <br/> на регистрацию</p>
-								</div>
-							</div>
-							<h5 class="rep-content__item-title">ОГРАНИЧЕНИЯ <br/> И ЗАЛОГИ </h5>
-							<p class="rep-content__item-descr">
-								Сведения о нахождение автомобиля  в розыске, наличие запрета на регистрационные действия, залог или арест
-							</p>
-							</div>
-							<div class="rep-content__item">
-							<div class="rep-content__item-top">
-								<div class="rep-content__image"><img src="images/icon/operation-history__car.svg" alt="История эксплуатации машины"></div>
-								<div class="rep-content__specification">
-									<img src="images/icon/checkmark_green.svg" alt="Зелёная галочка">
-									<p>Пробег автомобиля <br/> соответствует ПТС</p>
-								</div>
-							</div>
-							<h5 class="rep-content__item-title">ИСТОРИЯ <br/> ЭКСПЛУАТАЦИИ</h5>
-							<p class="rep-content__item-descr">
-								Данные о ТО с описанием произведенных работ, история пробега автомобиля
-							</p>
-							</div>
-						</div>
-					</div>
-					<div class="rep-content__bottom">
-						<div class="rep-content__bottom-line"></div>
-						<div class="rep-content__bottom-btn">
-							<button class="rep-content__bottom-but">
-								<a class="rep-content__bottom-link" href="report.html">
-									<img src="images/icon/example-rep.svg" alt="Example report">
-									Посмотреть пример отчёта
-								</a>
-							</button>
+						<div class="tariffs-card__bottom-links">
+							<a class="tariffs-card__bottom-link" href="#">
+								<span>Перейти в ВК-Бот</span>
+							</a>
+							<a class="tariffs-card__bottom-link" href="#">
+								<span>Перейти в Телеграм-Бот</span>
+							</a>
 						</div>
 					</div>
 				</div>
