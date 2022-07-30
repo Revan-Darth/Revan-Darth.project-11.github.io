@@ -418,6 +418,24 @@ new Swiper('.protect__inner', {
   		},
   	}
 });
+new Swiper ('.base-rep__content-graphics--images__main', {
+	slidesPerView: 1,
+	spaceBetween: 15,
+	watchOverflow: true,
+	loop: false,
+	slidesPerColumn: 1,
+	thumbs: {
+		swiper: {
+			el: '.base-rep__content-graphics--images__small',
+			slidesPerView: 3,
+			spaceBetween: 15,
+			navigation: {
+			    nextEl: '.swiper-button-next',
+			    prevEl: '.swiper-button-prev',
+			},
+		}
+	},
+});
 
 // Читать далее =======================================================
 	const readMoreCont = document.querySelector('.protect__text');
